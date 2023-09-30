@@ -4,3 +4,9 @@ C:\Users\ender\Music\NetFrameworkApi-master\Domain.Endpoint\obj\Debug\Domain.End
 C:\Users\ender\Music\NetFrameworkApi-master\Domain.Endpoint\obj\Debug\Domain.Endpoint.csproj.CoreCompileInputs.cache
 C:\Users\ender\Music\NetFrameworkApi-master\Domain.Endpoint\obj\Debug\Domain.Endpoint.dll
 C:\Users\ender\Music\NetFrameworkApi-master\Domain.Endpoint\obj\Debug\Domain.Endpoint.pdb
+C:\Users\osday\Desktop\NetFrameworkApi-master\Domain.Endpoint\bin\Debug\Domain.Endpoint.dll
+C:\Users\osday\Desktop\NetFrameworkApi-master\Domain.Endpoint\bin\Debug\Domain.Endpoint.pdb
+C:\Users\osday\Desktop\NetFrameworkApi-master\Domain.Endpoint\obj\Debug\Domain.Endpoint.csproj.AssemblyReference.cache
+C:\Users\osday\Desktop\NetFrameworkApi-master\Domain.Endpoint\obj\Debug\Domain.Endpoint.csproj.CoreCompileInputs.cache
+C:\Users\osday\Desktop\NetFrameworkApi-master\Domain.Endpoint\obj\Debug\Domain.Endpoint.dll
+C:\Users\osday\Desktop\NetFrameworkApi-master\Domain.Endpoint\obj\Debug\Domain.Endpoint.pdb
