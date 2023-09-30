@@ -5,6 +5,7 @@ public class DataStore
 {
     private static List<Color> _colores = new List<Color>();
 
+
     static DataStore()
     {
         // Agregar colores por defecto si lo deseas

@@ -148,6 +148,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\BodegaController.cs" />
     <Compile Include="Controllers\ColorsController.cs" />
     <Compile Include="Controllers\ToDosController.cs" />
     <Compile Include="Global.asax.cs">
