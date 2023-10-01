@@ -9,14 +9,14 @@ namespace Domain.Endpoint.Entities
     public class Categoria
     {
         public int ID_CATEGORIA{ get; set; }
-        public string ESTADO { get; set; }
+        public string Estado { get; set; }
 
-        public string DESCRIPCION { get; set; }
+        public string Descripcion { get; set; }
 
-        public string NOMBRE_CATEGORIA { get; set; }
+        public string Nombre_Categoria{ get; set; }
 
-        public string NOMBRE { get; set; }
+        public string Nombre { get; set; }
 
-        public DateTime? FECHAINGRESO { get; set; }
+        public DateTime? FechaIngreso { get; set; }
     }
 }

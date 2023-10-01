@@ -9,11 +9,11 @@ namespace Domain.Endpoint.Entities
     public class Linea_Telefonica
     {
         public int ID_LINEA_TELEFONICA { get; set; }
-        public int CLARO { get; set; }
+        public int claro { get; set; }
 
-        public int TIGO { get; set; }
+        public int tigo { get; set; }
 
-        public int CONVENCIONAL { get; set; }
+        public int convencional { get; set; }
 
         public int ID_PROVEEDOR { get; set; }
 

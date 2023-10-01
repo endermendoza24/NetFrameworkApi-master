@@ -15,8 +15,8 @@ namespace Domain.Endpoint.Entities
 
         public string NOMBRE_CONTACTO { get; set; }
 
-        public int ID_FAC_COMPRA { get; set; }
+        public int id_fac_compra { get; set; }
         public string NOMBRE_EMPRESA { get; set; }
-        public string ESTADO { get; set; }
+        public string Estado { get; set; }
     }
 }

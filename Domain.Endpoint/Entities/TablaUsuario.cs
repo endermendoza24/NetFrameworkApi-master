@@ -9,13 +9,15 @@ namespace Domain.Endpoint.Entities
     public class TablaUsuario
     {
         public int ID_USUARIO{ get; set; }
-        public string NOMBRE_COMPLETO { get; set; }
+        public string Nombre_Completo { get; set; }
 
-        public string CORREO { get; set; }
+        public string Correo { get; set; }
 
-        public int TELEFONO { get; set; }
-        public string ESTADO { get; set; }
-        public DateTime? FECHA_CREACION { get; set; }
+        public int Telefono { get; set; }
+
+        public string Estado { get; set; }
+
+        public DateTime? Fecha_Creacion { get; set; }
 
     }
 }
