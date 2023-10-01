@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Domain.Endpoint.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Domain.Endpoint.Entities
+namespace Application.Endpoint
 {
     public class BodegaStore
     {

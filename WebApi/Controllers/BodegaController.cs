@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Web.Http;
+using Application.Endpoint;
 using Domain.Endpoint.Entities;
 
 namespace WebApi.Controllers

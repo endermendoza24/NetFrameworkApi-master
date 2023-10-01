@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="BodegaStore.cs" />
     <Compile Include="DataStore.cs" />
+    <Compile Include="Datos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
