@@ -8,7 +8,7 @@ namespace Domain.Endpoint.Entities
 {
     public class TablaUsuario
     {
-        public int ID_USUARIO{ get; set; }
+        public int ID { get; set; }
         public string Nombre_Completo { get; set; }
 
         public string Correo { get; set; }

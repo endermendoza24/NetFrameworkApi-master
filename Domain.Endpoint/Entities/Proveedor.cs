@@ -8,7 +8,7 @@ namespace Domain.Endpoint.Entities
 {
     public class Proveedor
     {
-        public int ID_PROVEEDOR { get; set; }
+        public int ID { get; set; }
         public string CIUDAD_PROVEEDOR { get; set; }
 
         public string CORREO_ELECTRONICO { get; set; }

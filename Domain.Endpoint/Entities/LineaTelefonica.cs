@@ -8,7 +8,7 @@ namespace Domain.Endpoint.Entities
 {
     public class Linea_Telefonica
     {
-        public int ID_LINEA_TELEFONICA { get; set; }
+        public int ID { get; set; }
         public int claro { get; set; }
 
         public int tigo { get; set; }

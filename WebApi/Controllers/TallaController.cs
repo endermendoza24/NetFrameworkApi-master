@@ -1,86 +1,26 @@
-﻿using Application.Endpoint;
-using Domain.Endpoint.Entities;
+﻿using Domain.Endpoint.Entities;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web.Http;
+using Application.Endpoint;
 
 namespace WebApi.Controllers
 {
     public class TallaController : ApiController
     {
-        private TallaStore _tallaStore = new TallaStore();
+        public TallaController()
+        {
+            _tallaStore = new EntityStore<Talla>(t => t.ID);
+        }
+        private EntityStore<Talla> _tallaStore = new EntityStore<Talla>();
 
         [HttpGet]
-        public List<Talla> ObtenerTallas()
-        {
-            // Devuelve la lista de todas las tallas
-            return _tallaStore.ObtenerTodas();
-        }
-
-        [HttpGet]
-        public IHttpActionResult ObtenerTalla(int id)
+        public IHttpActionResult ObtenerTallas()
         {
             try
             {
-                // Intenta obtener una bodega por su ID
-                Talla talla = _tallaStore.ObtenerPorID(id);
-
-                if (talla == null)
-                    // Si no se encuentra la talla, devuelve una respuesta NotFound
-                    return NotFound();
-
-                // Si se encuentra la talla, devuelve una respuesta Ok con la bodega
-                return Ok(talla);
-            }
-            catch (Exception ex)
-            {
-                // Si ocurre un error, devuelve una respuesta InternalServerError con el error
-                return InternalServerError(ex);
-            }
-        }
-
-        // post
-        [HttpPost]
-        public IHttpActionResult AgregarTalla([FromBody] Talla nuevaTalla)
-        {
-            try
-            {
-                // Agrega una nueva bodega
-                _tallaStore.AgregarTalla(nuevaTalla);
-
-                // Obtiene la lista actualizada de tallas
-                List<Talla> talla = ObtenerTallas();
-
-                // Devuelve una respuesta Ok con la lista de tallas
-                return Ok(talla);
-            }
-            catch (Exception ex)
-            {
-                // Si ocurre un error, devuelve una respuesta InternalServerError con el error
-                return InternalServerError(ex);
-            }
-        }
-
-        // actualizar
-        [HttpPut]
-        public IHttpActionResult ActualizarTalla(int id, [FromBody] Talla tallaActualizada)
-        {
-            try
-            {
-                // Intenta obtener la bodega existente por su ID
-                Talla tallaExistente = _tallaStore.ObtenerPorID(id);
-
-                if (tallaExistente == null)
-                    // Si no se encuentra la bodega, devuelve una respuesta NotFound
-                    return NotFound();
-
-                // Actualiza los campos de la bodega existente con los datos proporcionados
-                tallaExistente.NUM_TALLA = tallaActualizada.NUM_TALLA;
-                // Obtiene la lista actualizada de tallas
-                List<Talla> tallas = ObtenerTallas();
+                // Obtiene la lista de todas las tallas
+                List<Talla> tallas = _tallaStore.ObtenerTodo();
 
                 // Devuelve una respuesta Ok con la lista de tallas
                 return Ok(tallas);
@@ -92,26 +32,19 @@ namespace WebApi.Controllers
             }
         }
 
-        // borrar
-        [HttpDelete]
-        public IHttpActionResult EliminarTalla(int id)
+        [HttpGet]
+        public IHttpActionResult ObtenerTalla(int id)
         {
             try
             {
-                // Intenta obtener la bodega existente por su ID
-                Talla tallaExistente = _tallaStore.ObtenerPorID(id);
+                // Intenta obtener una talla por su ID
+                Talla talla = _tallaStore.ObtenerPorId(id);
 
-                if (tallaExistente == null)
-                    // Si no se encuentra la bodega, devuelve una respuesta NotFound
+                if (talla == null)
+                    // Si no se encuentra la talla, devuelve una respuesta NotFound
                     return NotFound();
 
-                // Elimina la bodega de la lista
-                _tallaStore.BorrarTalla(id);
-
-                // Obtiene la lista actualizada de bodegas
-                List<Talla> talla = _tallaStore.ObtenerTodas();
-
-                // Devuelve una respuesta Ok con la lista de bodegas
+                // Si se encuentra la talla, devuelve una respuesta Ok con la talla
                 return Ok(talla);
             }
             catch (Exception ex)
@@ -121,6 +54,67 @@ namespace WebApi.Controllers
             }
         }
 
+        [HttpPost]
+        public IHttpActionResult AgregarTalla([FromBody] Talla nuevaTalla)
+        {
+            try
+            {
+                // Agrega una nueva talla
+                _tallaStore.Agregar(nuevaTalla);
 
+                // Obtiene la lista actualizada de tallas
+                List<Talla> tallas = _tallaStore.ObtenerTodo();
+
+                // Devuelve una respuesta Ok con la lista de tallas
+                return Ok(tallas);
+            }
+            catch (Exception ex)
+            {
+                // Si ocurre un error, devuelve una respuesta InternalServerError con el error
+                return InternalServerError(ex);
+            }
+        }
+
+        [HttpPut]
+        public IHttpActionResult ActualizarTalla(int id, [FromBody] Talla tallaActualizada)
+        {
+            try
+            {
+                // Intenta actualizar la talla por su ID
+                _tallaStore.Actualizar(id, tallaActualizada);
+
+                // Obtiene la lista actualizada de tallas
+                List<Talla> tallas = _tallaStore.ObtenerTodo();
+
+                // Devuelve una respuesta Ok con la lista de tallas
+                return Ok(tallas);
+            }
+            catch (Exception ex)
+            {
+                // Si ocurre un error, devuelve una respuesta InternalServerError con el error
+                return InternalServerError(ex);
+            }
+        }
+
+        [HttpDelete]
+        public IHttpActionResult EliminarTalla(int id)
+        {
+            try
+            {
+                // Intenta eliminar la talla por su ID
+                _tallaStore.Eliminar(id);
+
+                // Obtiene la lista actualizada de tallas
+                List<Talla> tallas = _tallaStore.ObtenerTodo();
+
+                // Devuelve una respuesta Ok con la lista de tallas
+                return Ok(tallas);
+            }
+            catch (Exception ex)
+            {
+                // Si ocurre un error, devuelve una respuesta InternalServerError con el error
+                return InternalServerError(ex);
+            }
+        }
     }
 }

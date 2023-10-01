@@ -8,7 +8,7 @@ namespace Domain.Endpoint.Entities
 {
     public class Talla
     {
-        public int ID_TALLA { get; set; }
+        public int ID { get; set; }
         public string NUM_TALLA { get; set; }
     }
 

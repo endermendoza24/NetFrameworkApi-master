@@ -8,7 +8,7 @@ namespace Domain.Endpoint.Entities
 {
     public class Categoria
     {
-        public int ID_CATEGORIA{ get; set; }
+        public int ID { get; set; }
         public string Estado { get; set; }
 
         public string Descripcion { get; set; }

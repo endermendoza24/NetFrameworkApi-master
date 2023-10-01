@@ -41,10 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BodegaStore.cs" />
     <Compile Include="DataStore.cs" />
+    <Compile Include="EntityStore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TallaStore.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain.Endpoint\Domain.Endpoint.csproj">

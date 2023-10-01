@@ -10,7 +10,7 @@ namespace Domain.Endpoint.Entities
     public class Bodega
     {
         [Key]
-        public int ID_BODEGA { get; set; }
+        public int ID { get; set; }
         public string NOMBRE_BODEGA { get; set; }
         public int ID_PRODUCTO { get; set; }
         public string  DIRECCION { get; set; }
