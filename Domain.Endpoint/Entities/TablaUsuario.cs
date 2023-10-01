@@ -13,9 +13,9 @@ namespace Domain.Endpoint.Entities
 
         public string Correo { get; set; }
 
-        public int Telefono { get; set; }
+        public string Telefono { get; set; }
 
-        public string Estado { get; set; }
+        public bool Estado { get; set; }
 
         public DateTime? Fecha_Creacion { get; set; }
 

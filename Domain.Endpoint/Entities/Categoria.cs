@@ -9,11 +9,11 @@ namespace Domain.Endpoint.Entities
     public class Categoria
     {
         public int ID { get; set; }
-        public string Estado { get; set; }
+        public bool Estado { get; set; }
 
         public string Descripcion { get; set; }
 
-        public string Nombre_Categoria{ get; set; }
+        public int Nombre_Categoria{ get; set; }
 
         public string Nombre { get; set; }
 

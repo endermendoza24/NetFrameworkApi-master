@@ -49,6 +49,7 @@
     <Compile Include="Entities\Color.cs" />
     <Compile Include="Entities\LineaTelefonica.cs" />
     <Compile Include="Entities\Material.cs" />
+    <Compile Include="Entities\Producto.cs" />
     <Compile Include="Entities\Proveedor.cs" />
     <Compile Include="Entities\TablaUsuario.cs" />
     <Compile Include="Entities\Talla.cs" />

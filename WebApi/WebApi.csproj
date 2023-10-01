@@ -149,8 +149,13 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\BodegaController.cs" />
+    <Compile Include="Controllers\CategoriaController.cs" />
     <Compile Include="Controllers\ColorsController.cs" />
+    <Compile Include="Controllers\LineaTelefonicaController.cs" />
+    <Compile Include="Controllers\MaterialController.cs" />
+    <Compile Include="Controllers\ProductoController.cs" />
     <Compile Include="Controllers\ProveedorController.cs" />
+    <Compile Include="Controllers\TablaUsuarioController.cs" />
     <Compile Include="Controllers\TallaController.cs" />
     <Compile Include="Controllers\ToDosController.cs" />
     <Compile Include="Global.asax.cs">
