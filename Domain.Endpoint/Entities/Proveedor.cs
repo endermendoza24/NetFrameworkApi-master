@@ -17,6 +17,6 @@ namespace Domain.Endpoint.Entities
 
         public int id_fac_compra { get; set; }
         public string NOMBRE_EMPRESA { get; set; }
-        public string Estado { get; set; }
+        public bool Estado { get; set; }
     }
 }

@@ -41,7 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataStore.cs" />
     <Compile Include="EntityStore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
