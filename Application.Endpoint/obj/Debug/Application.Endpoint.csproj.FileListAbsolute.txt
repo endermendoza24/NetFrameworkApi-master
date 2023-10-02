@@ -25,3 +25,12 @@ C:\Users\ender\OneDrive\Imágenes\NetFrameworkApi-master\Application.Endpoint\ob
 C:\Users\ender\OneDrive\Imágenes\NetFrameworkApi-master\Application.Endpoint\obj\Debug\Application.Endpoint.csproj.CopyComplete
 C:\Users\ender\OneDrive\Imágenes\NetFrameworkApi-master\Application.Endpoint\obj\Debug\Application.Endpoint.dll
 C:\Users\ender\OneDrive\Imágenes\NetFrameworkApi-master\Application.Endpoint\obj\Debug\Application.Endpoint.pdb
+C:\Users\ender\OneDrive\Imágenes\CalzadoModaAPi\Application.Endpoint\bin\Debug\Application.Endpoint.dll
+C:\Users\ender\OneDrive\Imágenes\CalzadoModaAPi\Application.Endpoint\bin\Debug\Application.Endpoint.pdb
+C:\Users\ender\OneDrive\Imágenes\CalzadoModaAPi\Application.Endpoint\bin\Debug\Domain.Endpoint.dll
+C:\Users\ender\OneDrive\Imágenes\CalzadoModaAPi\Application.Endpoint\bin\Debug\Domain.Endpoint.pdb
+C:\Users\ender\OneDrive\Imágenes\CalzadoModaAPi\Application.Endpoint\obj\Debug\Application.Endpoint.csproj.AssemblyReference.cache
+C:\Users\ender\OneDrive\Imágenes\CalzadoModaAPi\Application.Endpoint\obj\Debug\Application.Endpoint.csproj.CoreCompileInputs.cache
+C:\Users\ender\OneDrive\Imágenes\CalzadoModaAPi\Application.Endpoint\obj\Debug\Application.Endpoint.csproj.CopyComplete
+C:\Users\ender\OneDrive\Imágenes\CalzadoModaAPi\Application.Endpoint\obj\Debug\Application.Endpoint.dll
+C:\Users\ender\OneDrive\Imágenes\CalzadoModaAPi\Application.Endpoint\obj\Debug\Application.Endpoint.pdb
